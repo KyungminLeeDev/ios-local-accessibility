@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         let bottomLabel = UILabel()
         bottomLabel.frame = CGRect(x: 20, y: view.bounds.size.height - 150, width: view.bounds.size.width - 40, height: 50)
         
-        bottomLabel.text = "Touch the button below!".localized()
+        bottomLabel.text = "Touch the button below!".localized
         
         bottomLabel.font = UIFont.systemFont(ofSize: 20)
         
@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         let button = UIButton(type: .system)
         button.frame = CGRect(x: 20, y: view.bounds.size.height - 80, width: view.bounds.size.width - 40, height: 50)
         
-        button.setTitle("Touch Me!".localized(), for: .normal)
+        button.setTitle("Touch Me!".localized, for: .normal)
         
         
         button.titleLabel?.font = UIFont.systemFont(ofSize: 20)
