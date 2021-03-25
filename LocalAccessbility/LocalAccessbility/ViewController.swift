@@ -48,6 +48,11 @@ class ViewController: UIViewController {
         addBottomLabel()
         addButton()
         
-        dateTimeLabel.text = Date().description
+        let date = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .full
+        dateFormatter.locale = .current
+        
+        dateTimeLabel.text = dateFormatter.string(from: date)
     }
 }
